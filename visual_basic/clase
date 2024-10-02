@@ -1,0 +1,19 @@
+Sub inicio()
+  
+    msgbox "ingrese la cantidad de estudiantes"
+    informacion = InputBox("informacion")
+    For i = 1 To informacion
+        msgbox "ingrese su nombre"
+            nombre = InputBox("nombre")
+        msgbox "ingrese su municipio en donde vive"
+            municipio = InputBox("municipio")
+        msgbox "ingrese su placa"
+            placa = InputBox("placa")
+            
+            m = Mid(municipio, 1, 3)
+            n = Mid(nombre, Len(nombre) - 1, 2)
+            p = Mid(placa, Len(placa) - 2, 3)
+               msgbox "su codigo es:" + m + n + p
+    Next i
+    
+End Sub
