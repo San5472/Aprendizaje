@@ -67,7 +67,7 @@ class Geo{
 }
 
 void main() async{
-  var url = Uri.https('jsonplaceholder.typicode.com/','users');
+  var url = Uri.https('jsonplaceholder.typicode.com/','users/2');
   print ("Espere un momento, se esta cargando el programa");
   var response = await http.get(url);
   print('Response status: ${response.statusCode}');
