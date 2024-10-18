@@ -18,7 +18,7 @@ class Colaborador{
 
 void main(){
 
-  String json = '{"nombreCompleto": "santiago", "tipodeAporte": 1, "Aporte": 10.000}';
+  String json = '{"nombreCompleto": "santiago", "tipoAporte": 1, "aporte": 10.000}';
 
   Colaborador colaborador = Colaborador(json);
   print(colaborador.nombreCompleto);
