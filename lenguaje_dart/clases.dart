@@ -1,4 +1,3 @@
-import 'dart:mirrors';
 
 class Carro {
  double?  peso; 
@@ -11,29 +10,29 @@ class Celular {
  String? color;
  String? marca; 
 }
-class ventana {
+class Ventana {
   int? tamanio;
   int? ancho;
   String? color;
 }
 
 void main () { 
- Carro carro = new carro (); 
- Carro.peso = 1.200;
- Carro.marca = "toyota"; 
- Carro.modelo = "hilux"; 
- Carro.tamanio = 3;
+  Carro carro = Carro (){ 
+    Carro.peso = 1.200;
+    Carro.marca = "toyota"; 
+    Carro.modelo = "hilux"; 
+    Carro.tamanio = 3; 
+  
 
 
- Celular b  = new Celular();
- Celular.peso = 2.5; 
- Celular.color = "blanco"; 
- Celular.marca ="huawei";
+    Celular b  = Celular();
+    Celular.peso = 2.5; 
+    Celular.color = "blanco"; 
+    Celular.marca ="huawei";
 
- ventana c = new ventana();
- Ventana.tamanio = 17;
- Ventana.ancho = 2;
- Ventana.color = "verde claro";
-
-
+    Ventana c =  Ventana();
+    Ventana.tamanio = 17;
+    Ventana.ancho = 2;
+    Ventana.color = "verde claro";
+  }    
 }
