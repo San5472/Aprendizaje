@@ -21,4 +21,5 @@ void main() async{
   var url = Uri.https('jsonplaceholder.typicode.com','/posts/1');
   print('calculando');
    var response = await http.get (url);
+   print (response);
 }

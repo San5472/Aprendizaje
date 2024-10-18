@@ -66,13 +66,9 @@ class Geo{
   }
 }
 
-<<<<<<< Updated upstream
+
 void main() async{
   var url = Uri.https('jsonplaceholder.typicode.com/','users/2');
-=======
-void main()async{
-  var url = Uri.https('jsonplaceholder.typicode.com','/users/2');
->>>>>>> Stashed changes
   print ("Espere un momento, se esta cargando el programa");
   var response = await http.get(url);
   print('Response status: ${response.statusCode}');
@@ -81,4 +77,3 @@ void main()async{
   User user = User (response.body);
   print(user); 
 } 
-
