@@ -1,7 +1,20 @@
 // este es un ejemplo propio del metodo abstract factory 
 import 'dart:io';
 void main (){
+  print("¿Que quiere trabajar 1 - casauno 2 - casa2?");
+  int seleccion = int.parse(stdin.readLineSync()!);
 
+  Ferreteria ferreteria;
+
+  if (seleccion == 1 ){
+    ferreteria = Casauno();
+    ferreteria.Cemento();
+    ferreteria.Ladrillos();
+  } else if (seleccion == 2) {
+    ferreteria = Casados();
+    ferreteria.Cemento();
+    ferreteria.Ladrillos();
+  }
 }
 
 
