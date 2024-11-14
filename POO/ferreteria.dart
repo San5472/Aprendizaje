@@ -7,11 +7,11 @@ void main (){
   Ferreteria ferreteria;
 
   if (seleccion == 1 ){
-    ferreteria = Casauno();
+    ferreteria = personaUno();
     ferreteria.Cemento();
     ferreteria.Ladrillos();
   } else if (seleccion == 2) {
-    ferreteria = Casados();
+    ferreteria = personaDos();
     ferreteria.Cemento();
     ferreteria.Ladrillos();
   }
@@ -24,7 +24,7 @@ abstract class Ferreteria{
 }
 
 
-class Casauno implements Ferreteria{
+class personaUno implements Ferreteria{
   @override
   void Cemento() {
     print("se va a hacer una casa de 2 pisos");
@@ -36,7 +36,7 @@ class Casauno implements Ferreteria{
 }
 
 
-class Casados implements Ferreteria{
+class personaDos implements Ferreteria{
   @override
   void Cemento() {
     print("se va a trabajar haciendo un muro"); 
