@@ -35,3 +35,15 @@ if (altura >= 200){
 } else {
     datos.innerHTML += "<h1>eres una persona baja</h1>";
 }
+
+// bucles
+for (let year = 2000; year <= 2024; year++){
+    datos.innerHTML += `<h1>este es el año: ${year}</h1>`
+}
+
+// arrays
+let nombres = ["polo","uso carruso","juancho polo","juancho la cotopla","el propio bello"];
+
+let divNombres = document.querySelector("#nombres");
+
+divNombres.innerHTML = nombres [2];
