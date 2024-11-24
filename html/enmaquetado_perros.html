@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estiloenmaqueado.css">
+    <style>
+        main {
+            height: 1500px;
+            width: 850px;
+            margin: 0 auto;
+
+            header {
+                height: 150px;
+                width: 850px;
+            }
+            nav{
+                height: 50px;
+                width: 850px;
+                margin-bottom: 20px;
+            }
+            aside {
+                height: 325px;
+                width: 300px;
+                float: right;
+                border-radius: 15px;
+                margin-left: 35px;
+            }
+            article {
+                height: 150px;
+                width: 500px;
+                margin-bottom: 150px;
+            }
+            article{
+                margin-bottom: 20px;
+            }
+            footer {
+                border : 1px solid black;
+                height: 105px;
+                width: 850px;
+            }
+        }
+       
+        
+    </style>
+    <title>clase</title>    
+</head>
+<body>
+        <main>
+            <header>centro veterinario<br>
+                Caninos y Felinos
+                <img src="utilizar-removebg-preview.png" style="height: 100px; width: 100px; padding: 50px;">
+            </header>
+            <nav>.servicios | .productos | .guarderia | .promociones</nav>
+            <aside>
+                     Mascota:
+                    <form action="submit.js" method="post">
+                        <input type="text" id="nombre" placeholder="ingrese el nombre">
+                    </form>
+                    <p>
+                        <label for="edad">ingrese la edad:</label>
+                        <select name="edad" id="edad">
+                            <option value="opcion 1">1 año</option>
+                            <option value="opcion 2">2 años</option>
+                            <option value = "opcion 3">3 años</option>
+                            <option value ="opcion 4"> 4 años</option>
+                        </select>
+                    </p>
+                    raza:
+                <form action="submit.js" method="post">
+                    <input type="text" id = "raza" placeholder="ingrese raza">
+                </form>
+                    fecha:
+                <form action="submit.js" method="post">
+                    <input type="text" id="fecha" placeholder="dd/mm/aaaa">
+                </form>
+                hora:
+                <form action="submit.js" method="post">
+                    <input type ="text" id="hora" placeholder="--,--,--">
+                </form>
+                Amo:
+                <form action="submit.js" method="post">
+                    <input type="text" id="Amo" placeholder="ingrese el nombre">
+                </form>
+            </aside>
+            <section>
+                <article>
+                    <img src="gestos-de-los-perros.jpg"style="height: 120px; width: 120;
+                     float: right; border-radius:10px; border: solid black">
+                    <p>
+                        <strong>
+                            Cuidado y educacion para su perro<br>
+                        </strong>
+                        Cuidar y educar de nuestras mascotas es algo fundamental<br>
+                        es algo importante debido a que fomentamos un buen comportamiento de la mascota.
+                    </p>
+                </article>
+                <article>
+                    <img src="viajando-perro.jpeg" style="height: 120px; width: 120px; float: right;
+                     border-radius: 10px; border: solid black">
+                    <p>
+                        <strong>Salir de viaje con su mascota<br></strong>
+                        Salir de viaje con las mascotas ayuda a la buena relacion
+                        debido a que las mascotas se pueden en muchas veces a sentir solas<br>
+                        tomando cierto comportamiento inapropiado.
+                    </p>
+                </article>
+            </section> 
+            <footer>
+                <p>
+                    Contactenos<br>
+                    linea gratuita 01 8000-0001<br>
+                    Correo: preguntas@Caninosyfelinos.com
+                </p>
+            </footer>
+        </main>
+        
+</body>
+</html>
