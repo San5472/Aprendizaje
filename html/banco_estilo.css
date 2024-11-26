@@ -24,13 +24,27 @@ aside {
     height: 620px;
     width: 300px;
     float: left;
-}
-article {
-    border: 1px solid black;
-    height: 200px;
-    width: 250px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+
+    article {
+        border: 1px solid black;
+        height: 280px;
+        width: 250px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background-color: rgb(145, 136, 136);
+        padding: 10px 10px;
+        font-size: 15px;
+
+        .recuadro{
+            border: 5px solid black;
+            display: inline-block;
+        }
+        
+    }
+    
 }
 section {
     border: 1px solid black;
@@ -44,6 +58,8 @@ article {
     width: 250px;
     float: inline-start;
     margin: 20px 15px 10px 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 footer{
     border: 1px solid black;
