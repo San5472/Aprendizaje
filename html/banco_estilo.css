@@ -1,5 +1,5 @@
 main {
-    height: 1000px;
+    height: 1500px;
     width: 1000px;
     margin: auto;
 }
@@ -19,11 +19,11 @@ nav{
     background-color: rgb(225, 169, 29);
     text-align: center;
 }
-aside {
+aside { 
     border: 1px solid black;
-    height: 620px;
+    height: 650px;
     width: 300px;
-    float: left;
+    float: left;    
 
     article {
         border: 1px solid black;
@@ -37,14 +37,13 @@ aside {
         background-color: rgb(145, 136, 136);
         padding: 10px 10px;
         font-size: 15px;
-
-        .recuadro{
-            border: 5px solid black;
-            display: inline-block;
-        }
-        
     }
-    
+    .bloque2{
+        background-color: rgb(52, 47, 47);
+        color: white;
+        text-align: center;
+
+    }
 }
 section {
     border: 1px solid black;
