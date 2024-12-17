@@ -1,22 +1,23 @@
-var id = document.getElementById("id")
-var button = document.getElementById("button")
+var id = document.getElementById('id');
+var button = document.getElementById('button')
 
-button.addEventListener("click", function(){
+button.addEventListener('click', function(){
+
     var inputId = id.value;
-    fetch('https://jsonplaceholder.typicode.com/posts/1'+ inputId )
-      .then(response => response.json())
-      .then(json => {
-        document.querySelector("body > main > header > table > tbody > tr:nth-child(1) > th:nth-child(1)")
-        a.innerHTML = json.UserId
+    fetch('https://jsonplaceholder.typicode.com/todos/' + inputId)
+        .then(response => response.json())
+        .then(json => {
+            var a = document.querySelector("body > main > table > tbody > tr:nth-child(1) > td:nth-child(2)");
+            a.innerHTML = json.userId;
 
-        var b = document.querySelector("body > main > header > table > tbody > tr:nth-child(2) > th:nth-child(1)")
-        b.innerHTML = json.id
-        
-        var c = document.querySelector("body > main > header > table > tbody > tr:nth-child(3) > th:nth-child(1)")
-        c.innerHTML = json.title
+            var b = document.querySelector("body > main > table > tbody > tr:nth-child(2) > td:nth-child(2)");
+            b.innerHTML = json.id;
 
-        var d = document.querySelector("body > main > header > table > tbody > tr:nth-child(4) > th:nth-child(1)")
-        d.innerHTML = json.body
-      }
+            var c = document.querySelector("body > main > table > tbody > tr:nth-child(3) > td:nth-child(2)");
+            c.innerHTML = json.title;
+
+            var d = document.querySelector("body > main > table > tbody > tr:nth-child(4) > td:nth-child(2)");
+            d.innerHTML = json.completed;
+        }
     )
-})
+});

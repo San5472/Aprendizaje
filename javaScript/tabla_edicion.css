@@ -1,3 +1,63 @@
-main header table {
-    border : 1px solid black; 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e8f0fe; /* Azul pastel claro */
+    background-position: inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main {
+    width: 300px;
+    margin: auto;
+}
+table {
+    text-align: center;
+    border: 2px solid #d6e0f5; /* Azul grisáceo pastel */
+    background-color: #ffffff; /* Blanco */
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+}
+td {
+    padding: 10px;
+    width: 80px;
+    border: .5px solid #d1d9e6; /* Gris azulado claro */
+    background-color: #f8f9fb; /* Blanco con un toque gris */
+}
+header {
+    color: #ffffff; /* Blanco */
+    background-color: #8caadb; /* Azul pastel suave */
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+    border: 2px solid #5a8cc8; /* Azul pastel más oscuro */
+    border-radius: 20px 20px 0 0;
+    text-align: center;
+    margin: auto;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f4f8; /* Gris muy claro */
+    border: 2px solid #cfd9e4; /* Gris azulado suave */
+    border-radius: 0 0 20px 20px;
+}
+input {
+    padding: 10px;
+    margin: 5px auto;
+    border: none;
+    margin-top: 20px;
+    background-color: #e8eff6; /* Azul muy claro */
+    border-radius: 5px;
+}
+button {
+    border: none;
+    padding: 10px;
+    margin: 10px auto;
+    background-color: #b3cde8; /* Azul pastel */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .5s;
+}
+button:hover {
+    background-color: #9bb7d4; /* Azul un poco más oscuro */
 }
