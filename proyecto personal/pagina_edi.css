@@ -1,0 +1,42 @@
+main {
+    border: 1px solid black;
+    height: auto;
+    width: auto;
+    background-color: black;
+}
+header {
+    border: 1px solid black;
+    height: 200px;
+    width: 1500px;    
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+section{
+    border: 1px solid black;
+    height: 800px;
+    width: 1500px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    justify-items: center;
+    display: grid;
+}
+article {
+    border: 1px solid black;
+    height: 200px;
+    width: 200px;
+    color: aliceblue;
+    
+    img {
+        height: auto;
+        max-width: 100%;
+        
+    }
+}
