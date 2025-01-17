@@ -2,13 +2,13 @@ const readline = require('readline'); // ingreso por la terminal
 
 console.log("Bienvenido");
 
-const interfaz = readline.createInterface({
+const interfaz = readline.createInterface({ // funcion que me permite ingresar datos
     input: process.stdin,
     output: process.stdout
 });
 
 
-interfaz.question("Ingrese su edad:", (edad) => {
+interfaz.question("Ingrese su edad:", (edad) => { // condicional pidiendo la edad
     const edad_usuario = parseInt(edad);
     if (edad => 18){
         console.log("Procesando la informacion...");
@@ -16,7 +16,7 @@ interfaz.question("Ingrese su edad:", (edad) => {
         console.log("tiene que ser mayor de edad");
     }
 
-    interfaz.question("Ingrese sus ingresos:", (ingreso) => {
+    interfaz.question("Ingrese sus ingresos:", (ingreso) => { // condicional pidiendo los ingresos
         const ingreso_usuario = parseInt(ingreso);
         if (ingreso => 1000){
             console.log("Calculando su porciento");
@@ -26,7 +26,7 @@ interfaz.question("Ingrese su edad:", (edad) => {
         } else {
             console.log("Ingresos minimo, no aplica para descuento");
         }
-        interfaz.close();
+        interfaz.close(); // cierre del programa
     });
     
 });
