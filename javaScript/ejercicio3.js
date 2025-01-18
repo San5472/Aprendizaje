@@ -2,13 +2,13 @@
 
 const readline = require('readline'); // poder entrada por terminal
 
-const interfaz = readline.createInterface({
+const interfaz = readline.createInterface({ // uso del input y output
     input: process.stdin,
     output: process.stdout
 }); 
 
-let peso;
-let altura;
+let peso; // variable en donde  se va a almacenar la informacion
+let altura; // variable en donde se guarda la informacion
 
 
 interfaz.question("Bienvenido, ingrese su peso:", (peso) =>{ // uso del condicional
@@ -24,7 +24,7 @@ interfaz.question("Bienvenido, ingrese su peso:", (peso) =>{ // uso del condicio
 
         const resultado = peso / (altura*altura);
 
-        if (resultado <= 18.5){
+        if (resultado <= 18.5){ // condicional que indica cual es el peso de las personas, dependiendo de sus datos
         console.log("Estas bajo de peso, su resultado es:",resultado);
         } else if (resultado <= 24.9) {
         console.log("Esta es un peso normal su resultado es:",resultado ); 
@@ -34,10 +34,10 @@ interfaz.question("Bienvenido, ingrese su peso:", (peso) =>{ // uso del condicio
         console.log("Estas obeso su resultado es:",resultado);
         }
 
-        interfaz.close();
+        interfaz.close(); // cierre del programa 
 
     });
 
-});
+});      
 
 
