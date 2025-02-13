@@ -1,9 +1,30 @@
 main{
+
+    header{
+        text-align: center;
+        font-size: 50px;
+        font-family:Arial, Helvetica, sans-serif;
+        font-style: italic;
+        color: rgb(36, 45, 187 );
+    }
     
     table {
         border: 1px solid black;
+        height: 180px;
+        width: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-top: 250px;
+        
+    }
+
+    footer{
+        border: 1px solid black;
+        margin-inline-start: auto;
+    
     }
     
-
 }    
 
