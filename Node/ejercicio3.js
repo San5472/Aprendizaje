@@ -10,4 +10,3 @@ for (let i = 0; i < 1000000; i++){
 }
 
 console.log('La cantidad de memoria es de' + os.freemem() + ' bytes ' );
-

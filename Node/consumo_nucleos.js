@@ -7,6 +7,9 @@ console.log('La memoria del sistema operativo es de:' + os.totalmem() + ' bytes 
 console.log('Arquitectura del CPU:' + os.arch());
 console.log('Numeros de procesos logicos' + os.cpus().length);
 console.log('El total de memoria es de:' + os.freemem() + ' bytes ');
+console.log('El nombre del equipo es :' + os.hostname());
+
+
 
 
 os.cpus().forEach(cpu => {
