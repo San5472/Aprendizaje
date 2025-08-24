@@ -14,7 +14,7 @@ class Celular{
 	}
 }
 
-// hacer instancias de la clase
+// hacer instancias de la clase principal y que luego se pasen al metodo al imprimir
 const celularAlto = new Celular("Smart", "Infinix", "titanio");
 const celularBajo = new Celular("Huawei", "y9", "negro");
 
@@ -24,7 +24,7 @@ console.log(celularAlto.modelo);
 console.log(celularBajo.marca);
 
 
-// Imprimir usando el modelo
+// Imprimir usando el modelo para las instancias creadas del modelo
 celularAlto.funcionar();
 console.log(celularAlto.funcionar);
 
