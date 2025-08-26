@@ -27,6 +27,3 @@ class Hija extends Padre {
 }
 console.log(Hija.color);
 
-
-console.log("pene")
-
