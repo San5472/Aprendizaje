@@ -46,7 +46,7 @@ class _MyAppState extends State<MyApp> {
     void initState() {
       super.initState();
  
-      Future.delayed(const Duration(seconds: 2), () {
+      Future.delayed(const Duration(seconds: 3), () {
       setState((){
         _personaState = personaState.success; 
       });
@@ -55,7 +55,7 @@ class _MyAppState extends State<MyApp> {
 
     // carga de las tareas de las personas en segundos.
 
-    Future.delayed(const Duration(seconds: 2), (){
+    Future.delayed(const Duration(seconds: 3), (){
       setState((){
         _tareaState = tareaState.success;
       });

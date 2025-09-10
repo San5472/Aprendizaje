@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
       ),
       home: BlocProvider(
         create: (_) => FormBloc(),
-        child: const MyHomePage(title: 'Inicio'),
+        child: const MyHomePage(title: 'Inicio de sesión'),
       ),
     );
   }
@@ -45,7 +45,7 @@ class _MyHomePageState extends State<MyHomePage> {
       listener: (context, state) {
         if (state is FormularioGuardado) {
           ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(content: Text("Lista de sus trabajadores.")),
+            const SnackBar(content: Text("Lista de sus clientes.")),
           );
 
           campo1.clear();
@@ -66,14 +66,18 @@ class _MyHomePageState extends State<MyHomePage> {
         body: Padding(
           padding: const EdgeInsets.all(20.0),
           child: Column(
+             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
+                const Icon(Icons.account_circle,size: 100, color: Colors.white,),
                // Campo del nombre
               TextField(
                 controller: campo2,
                 decoration: const InputDecoration(
+                  prefixIcon: Icon(Icons.person, color:Colors.grey),
                   labelText: 'Nombre Usuario',
-                  border: OutlineInputBorder(),
+                  border: OutlineInputBorder(
+                  ),
                 ),
               ),
 
@@ -86,6 +90,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   LengthLimitingTextInputFormatter(10),
                 ],
                 decoration: const InputDecoration(
+                  prefixIcon: Icon(Icons.lock, color: Colors.grey),
                   labelText: 'Contraseña',
                   border: OutlineInputBorder(),
                 ),
@@ -107,9 +112,9 @@ class _MyHomePageState extends State<MyHomePage> {
                               cedula: campo1.text,
                               nombre: campo2.text,
                             ),
-                          );
+                          );  
                     },
-                    child: const Text("Entrar"),
+                    child:  const Text("Ingresar al sistema"),
                   );
                 },
               ),
