@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const fs = require('fs');
 const https = require('https');
@@ -6,10 +7,12 @@ const WebSocket = require('ws');
 const app = express();
 app.use(express.static('public'));
 
+const keypath = process.env.SSL_KEY_PATH;
+const certpath = process.env.SSL_CERT_PATH; 
 
 const server = https.createServer({
-    key: fs.readFileSync("localhost-key.pem"),
-    cert: fs.readFileSync("localhost.pem")
+    key: fs.readFileSync(keypath),
+    cert: fs.readFileSync(certpath)
 }, app);
 
 
