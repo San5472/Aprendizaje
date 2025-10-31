@@ -2,6 +2,8 @@ import express from "express";
 import path from "path";
 import { fileURLToPath } from "url";
 import conexion from './conexion.js';  // importación de la base se datos
+import { connect } from "http2";
+
 
 
 const app = express();
@@ -10,11 +12,25 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 app.use(express.static(path.join(__dirname, "public")));
+
 app.use(express.urlencoded({ extended: true })) // Poder leer los datos en los formularios
+app.use(express.json());
 
 app.get('/',  (req, res) => {
     res.sendFile(path.join(__dirname, "public", "views", "index.html"))
-}); 
+});
+
+
+app.get("/trabajadores", ( req, res) => {
+    const sql = "SELECT * FROM trabajadores";
+    conexion.query(sql, ( err, result) => {
+        if(err){
+            res.status(500).send("Error al traer la información de los trabajadores")
+        } else {
+            res.json(result);
+        }
+    });
+});
 
 
 app.post("/guardarTrabajadores", (req, res) => {
