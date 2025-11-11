@@ -11,10 +11,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "dotenv": "^17.2.2",
+    "crypto": "^1.0.1",
+    "crypto-js": "^4.2.0",
+    "dotenv": "^17.2.3",
     "express": "^5.1.0",
+    "https": "^1.0.0",
+    "jsonwebtoken": "^9.0.2",
     "openai": "^5.21.0",
-    "ws": "^8.18.3"
+    "ws": "^8.18.3",
+    "yaml": "^2.8.1"
   },
   "description": ""
 }
