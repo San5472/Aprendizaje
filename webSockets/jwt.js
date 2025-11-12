@@ -8,7 +8,7 @@ export const generarToken = (usuario) => {
     return jwt.sign(
         {id: usuario.id, nombre: usuario.nombre},
         process.env.JWt_KEY,
-        {expiresIn: process.env.JWt_KEY || "60s"  }
+        {expiresIn: process.env.JWt_EXPIRES || "60s"  }
     );
 };
 
